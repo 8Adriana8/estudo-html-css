@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <!-- Semanticas-->
+    <header> <!-- Cabeçalho introduz algo. Pode colocar qualção-->
+<h1>Estudo do HTML</h1>
+<h3>Conceitos introdutórios da linguagem.</h3>
+  <nav><!-- aqui normalmente tem os links de navegacao - ancora ou links externos-->
+    <ol> 
+        <li> <a href="Introdução"></a>Introdução</li>
+    </ol>
+</nav>  
+     </header>
+ <main> <!-- conteudo principal ta pagina.Conteudo mais importante. Mecanismo de busca da mais enfase a essa area.-->
+<section>
+     <h3>Uso de tags</h3>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium odit ex soluta impedit ratione vitae labore ipsa nihil iure fugiat!</p>
+
+</section>
+
+<section>
+    <h3>Uso de tabelas.</h3> <!-- normalmente se usa tag table-->
+    <table border="1" cellpadding="3" style="border-collapse: collapse;"> <!--cellpadding nao eh mais usado, entao vamos usar agora css para isso-->
+         <thead><!-- cabecalho - primeira linha da tabela-->
+             <tr>
+                <th colspan="4">Usuários</th>
+             </tr>
+            
+            <tr> <!-- table row-->
+                <Th>Tipo</Th>
+                <th>Nome</th> 
+                <th>CPF</th> <!-- table head titulos das colunas- colunas-->
+                <th>Data nasc.</th>
+             </tr>
+         </thead>
+         <tbody>
+            <tr>
+                <th rowspan="2">Funcionários</th>
+                <td>Maria</td>
+                <td>08080808</td>
+                <td>28/05/88</td>
+            </tr>
+            <tr>
+                <td>Joao</td>
+                <td>0777777808</td>
+                <td>25/06/89</td>
+            </tr>
+            <tr> <!-- rowspan = duracao da linha -->
+                <td rowspan="2">Cliente</td>
+                <td>Paulo</td>
+                <td>0505050505</td>
+                <td>21/02/77</td>
+            </tr>
+            <tr>
+                
+                <td>Pedro</td>
+                <td>0303050505</td>
+                <td>21/02/77</td>
+            </tr>
+         </tbody>
+         <table>
+            <hr/>
+         <table border="1" cellpadding="4" style="border-collapse: collapse;">
+    <tr>
+        <td colspan="2">Celula 1-1</td>
+        <td>Celula 1-3</td>
+    </tr>
+    <tr> 
+        <td>Celula 2-1</td>
+        <td>Celula 2-2</td>
+        <td>Celula 2-3</td>
+    </tr>
+        </table>
+</section>
+     </main>
+     <hr /> <!-- Horizontal rule (linha horizontal)-->
+     <footer> <!-- Da informacoes sobre autoria e encerramento do conteudo-->
+        
+        &copy; © <!--copiright, duas maneiras diferentes de fazer o mesmo simbolo aparecer-->
+        <script>
+            document.write(new Date().getFullYear())
+        </script>
+        Soulcode Academy
+
+     </footer>
+</body>
+</html>
