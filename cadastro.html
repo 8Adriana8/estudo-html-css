@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form> <!-- Container de inputs--> 
+
+<div> <!-- for no label e id no input para conectar os dois . Sempre que tiver label, TEM que ter input-->
+    <label for="CampoNome">Nome completo</label><br/> <!-- Rótulo do campo (da nome)-->
+    <input id="CampoNome" name="campoNome" type="text" placeholder="Seu nome" required /> <!-- Tag q gera o campo p digitar-->
+    <!-- placeholder = da dica p/ usuario-->
+    <!-- required = obrigatorio-->
+    <!-- id faz o vinculo-->
+</div>
+
+<div>
+    <label for="campoEmail">Email</label><br/>
+    <input id="campoEmail" name="campoEmail" type="email" placeholder="usuario@exemplo.com" required/>
+
+</div>
+    
+<div>
+    <label for="campoSenha">Senha</label><br/>
+    <input id="campoSenha" name="campoSenha" type="password" placeholder="Sua senha" required/>
+    <!-- type password faz os numeros digitados pelo usuario ficarem escondidos.-->
+</div>
+
+<div>
+     <label for="campoProfissao">Profissão</label><br/>
+     <select id="campoProfissao" name="campoProfissao" required>
+        <option select disabled value="">Selecione uma opção</option>
+        <option value="professor">Professor</option>
+        <option value="técnico">Técnico</option>
+        <option value="especialista">Especialista</option>
+        <option value="nda">Nenhuma das anteriores</option>
+     </select>
+
+</div>
+
+<div>
+
+    <label>Idioma nativo</laabel><br/>
+
+    <input id="CheckIngles" name="campoIdioma" type="radio" value="ingles" required/>
+    <label for="CheckIngles">Ingles</label>
+
+    <input id="CheckEspanhol" name="CampoIdioma" type="radio" value="espanhol"/>
+    <label for="checkEspanhol">Espanhol</label>
+
+    <input id="checkPortugues" name="campoIdioma" Type="radio" value="portugues" />
+    <label for="checkPortugues">Português.</label>
+</div>
+
+<div>
+<label for="campoResumo">Fale sobre você</label><br/>
+<textarea id="campoResumo" name="campoResumo" minlength="30" maxlength="128" rows="5" cols="30" placeholder="Descreva sua vida profissional."></textarea>
+</div>
+<div>
+    <input id="CheckTermos" type="checkbox" name="concordaTermos" required />
+    <label for="CheckTermos">Concordo com os termos do serviço</label>
+</div> <!--checkTermos faz c que qdo vc clica no texto ele seleciona a caixa como se estivesse selecionando direto na caixa-->
+<div>
+<hr/>
+<button>Enviar</button> <!-- Sibmit-->
+<button type="reset">Limpar</button>
+<button type="button" onclick="alert(`Oieee`)">Outra ação</button>
+
+</div>
+<!-- cliquei no navegador e isso aparece depois deu ter respondido  o formulário:
+
+    Query parameters
+    
+    http://127.0.0.1:5500/cadastro.html?campoNome=ee&campoEmail=nana.lopes86%40gmail.com&campoSenha=ee&campoProfissao=professor&campoIdioma=ingles&campoResumo=Batataeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee&concordaTermos=on
+-->
+</form>
+</body>
+</html>
