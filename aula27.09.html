@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/aula27.09.css"/>
+</head>
+<body>
+    <header>
+<nav class="navbar">
+    <div class="navbar-brand">
+        <img src="https://soulcodeacademy.org/assets/images/logo/light-logo.png" alt="Brand(texto que aparece caso a imagem suma do site linkado)"/>
+        <span class="navbar-burger" onclick="ativaNavbar()">
+             
+            &#8801; 
+
+        </span>
+    </div>
+    <div class="navbar-menu">
+        <a href="#" class="navbar-link">Início</a>
+        <a href="#" class="navbar-link">Bootcamps</a>
+        <a href="#" class="navbar-link">Online</a>
+        <a href="#" class="navbar-link">Ajuda</a>
+
+    </div>
+</nav>
+
+    </header>
+    <script>
+        function ativaNavbar() {
+       // console.log("Oiee"); // js vai varrer documento html em busca do elemento com classe .navbar-menu, ele pega as classes e adiciona o ativa neles
+       //toggle coloca a classe ativa se nao tiver e se tiver ele remove o q tem. 
+       //document representa essa pag de html
+       document.querySelector(".navbar-menu").classList.toggle("ativa")
+        }
+    </script>
+</body>
+</html>
